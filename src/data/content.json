@@ -1,0 +1,43 @@
+{
+  "Pages": [
+    {
+      "title": "Industries",
+      "slug": "industries",
+      "blocks": [
+        {
+          "type": "marquee",
+          "headline": "Industries",
+          "subhead": " Clinical protein, earth and running convenience mauris, volutpat nibh sauce, just a lot of ferment mass laughter. ",
+          "points": " gas ligula gate trigger Performance forever. ",
+          "background": " slide_one.jpg "
+        }
+      ]
+    },
+    {
+      "title": "Services",
+      "slug": "services",
+      "blocks": [
+        {
+          "type": "marquee",
+          "headline": "Services",
+          "subhead": "Tomorrow is a lot of tomato chili carrots fermentation.",
+          "eta": "Unfortunately, this developer is not pregnant at my door need fear.",
+          "background": "slide_two.jpg"
+        }
+      ]
+    },
+    {
+      "title": "About Us",
+      "slug": "about us",
+      "blocks": [
+        {
+          "type": "marquee",
+          "headline": "e-but sed smile casino sit carrots are not big",
+          "subhead": " School, who will relay pot soft football or a football lion. Tomorrow a lot of tomato chili carrots fermentation. PakSoft Reserved gate trigger Performance forever. ",
+          "eta": "School, who will relay pot soft football or a football lion.",
+          "background": "slide_three.jpg"
+        }
+      ]
+    }
+  ]
+}

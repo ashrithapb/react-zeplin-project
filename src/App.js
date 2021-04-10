@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Home from "./components/Home";
+import { PageContext } from "./components/PageContext";
+import data from "./data/content.json";
 
 function App() {
+  const defaultValue = data?.Pages[0].slug;
+
+  const path = "./assets/";
+
+  const [pageValue, setPageValue] = useState(defaultValue);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PageContext.Provider value={{ pageValue, setPageValue }}>
+      {data?.Pages?.map(
+        (page, index) =>
+          page.slug === pageValue && (
+            <div
+              key={index}
+              className="app"
+              style={{
+                backgroundImage: `url(${
+                  path + page.blocks[0].background.trim()
+                }) `,
+              }}
+            >
+              <Home pages={data?.Pages} />
+            </div>
+          )
+      )}
+    </PageContext.Provider>
   );
 }
 

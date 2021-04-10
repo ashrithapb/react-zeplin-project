@@ -1,13 +1,132 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.app {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 1440px;
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  color: #fff;
+  margin-top: 20px;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 4.728rem;
+  height: 2.363rem;
+  object-fit: contain;
+}
+.header__button {
+  width: 8.688rem;
+  height: 2.625rem;
+  padding: 0.75rem 0.063rem 0.75rem 0;
+  border: solid 1px #fff;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu__button {
+  background-color: transparent;
+  font-size: 0.875rem;
+  border: none;
+  color: #fff;
+  display: block;
+  font-family: HelveticaNeue;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+.menu .active {
+  outline: none;
+  color: #ffc004;
+}
+.content__row,
+.footer__row {
+  display: flex;
+  word-break: break-all;
+}
+.content__row-left,
+.content__row-right,
+.footer__row-left,
+.footer__row-right {
+  width: 50%;
+  padding: 5%;
+}
+.content__row-left {
+  font-family: HelveticaNeue;
+  font-size: 5.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -2.2px;
+}
+.content__row-right {
+  font-family: HelveticaNeue;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+}
+.footer__row {
+  background-color: #fff;
+  color: black;
+}
+.footer__row-button {
+  font-family: HelveticaNeue;
+  font-size: 0.688rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: 1px;
+  height: 1.25rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.footer__row-button:focus {
+  outline: none;
+}
+.footer__arrow {
+  color: #ffc001;
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    width: 100%;
+  }
+  .content__row,
+  .footer__row {
+    flex-direction: column;
+  }
+  .content__row-left,
+  .content__row-right,
+  .footer__row-left,
+  .footer__row-right {
+    width: 90%;
+  }
+  .header {
+    padding: 5%;
+  }
 }
