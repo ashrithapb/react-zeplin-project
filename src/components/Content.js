@@ -3,6 +3,7 @@ import { PageContext } from "./PageContext";
 
 function Content({ pages }) {
   const { pageValue } = useContext(PageContext);
+
   return (
     <div className="content">
       {pages?.map(

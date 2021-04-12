@@ -4,6 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Footer({ pages }) {
   const { pageValue } = useContext(PageContext);
+
   return (
     <div className="footer">
       {pages?.map(
